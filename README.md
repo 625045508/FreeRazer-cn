@@ -6,6 +6,18 @@
 
 **关于汉化：** 本仓库是 [JSa25/FreeRazer](https://github.com/JSa25/FreeRazer) 的简体中文分支，界面、提示、错误信息和安装程序都已汉化，功能与上游一致（版本 1.0.7）。鼠标型号名按上游保持英文，便于对照 OpenRazer 与 GitHub issue。安装包由 `build.ps1` 一键生成，安装界面为简体中文。
 
+汉化工作由 **DeepSeek Harness** 完成：用它的代码工具链逐个字符串翻译 `freerazer.pyw` / `razer_switch.py`（共 336 处），修正了汉化引起的告警判定、配置名校验等耦合，再用 PyInstaller + Inno Setup 打包并逐页截图验收。
+
+## 下载（不用自己编译）
+
+到 [Releases](https://github.com/625045508/FreeRazer-cn/releases) 下载：
+
+| 文件 | 用途 |
+|---|---|
+| `FreeRazerSetup.exe` | 安装程序（简体中文向导，装到当前用户，不需要管理员权限） |
+| `FreeRazer.exe` | 单文件绿色版，双击即用（更适合放 U 盘） |
+| `FreeRazerSetup.exe.sha256` | 安装包的校验值 |
+
 ## 功能
 
 - 除左键外，任意按键都能改（左键保留，防止把自己锁在外面）：其它鼠标键、单键、组合键（如 Ctrl + S）、DPI 档位切换。
