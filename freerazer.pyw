@@ -215,10 +215,10 @@ def leader(b):
 
 
 APP_VERSION = '1.0.7'  # build.ps1 reads this; bump it for every release
-UPDATE_REPO = 'JSa25/freerazer'  # GitHub repo whose Releases carry the installer
+UPDATE_REPO = '625045508/FreeRazer-cn'  # GitHub repo whose Releases carry the installer
 SETUP_ASSET = 'FreeRazerSetup.exe'  # release asset, plus SETUP_ASSET + '.sha256'
-DB_URL = f'https://raw.githubusercontent.com/{UPDATE_REPO}/master/{rs.DB_FILE}'  # the mouse database, kept in the repo
-ISSUES_URL = f'https://github.com/{UPDATE_REPO}/issues/new'  # where mouse reports go
+DB_URL = f'https://raw.githubusercontent.com/{UPDATE_REPO}/main/{rs.DB_FILE}'  # the mouse database, kept in the repo
+ISSUES_URL = 'https://github.com/JSa25/freerazer/issues/new'  # 鼠标报告发到上游 issue，那边才有人整理数据库
 
 
 def buttons_issue_url(model, buttons):
